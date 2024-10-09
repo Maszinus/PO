@@ -29,8 +29,8 @@ class User {
 }
 
 const users = [
-    new User('nick1', 'Adam', 'Kowalski', 'adam@gmail.com', 'editor'),
-    new User('nick2', 'Ewa', 'Nowak', 'ewa@gmial.com', 'admin')
+    new User('nick1', 'Wojtek', 'Snopek', 'wojtek@gmail.com', 'editor'),
+    new User('nick2', 'Marek', 'Genge', 'mgenge@itmargen.com', 'admin')
 ];
 
 users[0].logIn();
@@ -61,7 +61,7 @@ class Fighter {
     }
 }
 
-const names = ["Baraka", "Jax", "Johnny Cage", "Kitana", "Kung Lao", "Liu Kang", "Mileena", "Raiden", "Reptile", "Scorpion", "Shang Tsung", "Sub-Zero"];
+const names = ["Baka", "Jax", "Johnny Cage", "Kitana", "Kung Lao", "Liu Kang", "Mileena", "Raiden", "Reptile", "Scorpion", "Shang Tsung", "Sub-Zero"];
 const fighters = names.map(name => new Fighter(name));
 
 function getFighter() {
@@ -94,7 +94,7 @@ function loop() {
     setTimeout(loop, 1000);
 }
 
-//loop();
+loop();
 
 //Zadanie 3
 console.log("Zadanie 3");
@@ -103,7 +103,7 @@ String.prototype.sortText = function (char) {
     return this.split(char).sort().join(char);
 };
 
-console.log("Piotr-Marcin-Bartek".sortText('-'));
+console.log("Piotr;Konrad;Grzegorz".sortText(';'));
 
 //Zadanie 4
 console.log("Zadanie 4");
@@ -112,7 +112,7 @@ String.prototype.reverse = function () {
     return this.split('').reverse().join('');
 };
 
-console.log("Ala ma kota".reverse());
+console.log("Alan ma kota".reverse());
 
 //Zadanie 5
 console.log("Zadanie 5");
